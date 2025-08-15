@@ -85,7 +85,7 @@
     `
 
     fileItem.querySelector('.download-btn').addEventListener('click', () => {
-      window.open('/file/' + file.id, '_blank')
+      downloadFile(file.id)
     })
     fileItem.querySelector('.delete-btn').addEventListener('click', () => {
       deleteFile(file.id)
